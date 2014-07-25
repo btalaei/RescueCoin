@@ -1,0 +1,9 @@
+Building Rescuecoincoin
+
+See doc/readme-qt.rst for instructions on building Rescuecoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Rescuecoin.
+
+See doc/build-*.txt for instructions on building rescuecoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Rescuecoin.
