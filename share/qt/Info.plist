@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>bitcoin.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleGetInfoString</key>
+	<string>$VERSION, Copyright © 2009-$YEAR The Bitcoin developers</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$VERSION</string>
+	<key>CFBundleVersion</key>
+	<string>$VERSION</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>Rescuecoin-Qt</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.rescuecoin.Rescuecoin-Qt</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>org.rescuecoin.RescuecoinPayment</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>rescuecoin</string>
+			</array>
+		</dict>
+	</array>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>
