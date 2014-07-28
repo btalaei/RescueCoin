@@ -26,7 +26,7 @@ class CAddress;
 class CInv;
 class CNode;
 
-#define NDIFF_START_DIGISHIELD 6000
+#define NDIFF_START_DIGISHIELD 4945
 #define NDIFF_START_KGW 0
 
 #define NDIFF_START_DIGISHIELD_TESTNET 10
