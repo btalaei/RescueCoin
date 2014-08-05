@@ -38,9 +38,9 @@ namespace Checkpoints
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
         (    0, uint256("0x91ec7b6da5ad34d272ce78bbc4f8736717f8bb3d4dca0ed6c9e5a27a60500847"))
-        (  800, uint256("0xf1126d50ca7578400382c285f12f8c888fd47823e5aa56ae78fd92218a79fd8a"))
-        ( 1500, uint256("0x6ad7cb60f18a5aaa0030e26dc14fb312021472d3387afc4b607fdce0b08c4545"))
-        ( 4032, uint256("0x0d0dd83c4d12478dda2c745892be5ada0bba2d10d6b990b4b3cedcfb64daece1"))
+        (  800, uint256("0x8e86562f58294acab29cab91a1855946d35c004872fe89ab42b0c708bc1c59fa"))
+        ( 1500, uint256("0x4dddef7d57acfc7ec60723795e8a32d5cc75cd2567cb66231d22e3181beee52e"))
+        ( 4032, uint256("0x7567934facc4fe1a01803577edcea2f252131fd060564906bb1eaca461cd60e9"))
         ;
     static const CCheckpointData data = {
         &mapCheckpoints,
@@ -70,15 +70,15 @@ namespace Checkpoints
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
-        //if (!GetBoolArg("-checkpoints", true))
+        if (!GetBoolArg("-checkpoints", true))
             return true;
 
 
-        /*const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
+        const MapCheckpoints& checkpoints = *Checkpoints().mapCheckpoints;
 
         MapCheckpoints::const_iterator i = checkpoints.find(nHeight);
         if (i == checkpoints.end()) return true;
-        return hash == i->second;*/
+        return hash == i->second;
     }
 
     // Guess how far we are in the verification process at the given block index
